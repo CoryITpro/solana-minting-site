@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.sidebar {
+  position: fixed;
+  width: 360px;
+  height: 100%;
+  right: -360px;
+  padding: 64px 0 0;
+  transition: 0.3s;
+  background-color: $red;
+  z-index: 100;
+
+  &-show {
+    right: 0 !important;
+  }
+
+  @media (max-width: 450px) {
+    width: 100%;
+    right: -100%;
+  }
+
+  & > a {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+  }
+}

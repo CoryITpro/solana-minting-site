@@ -1,0 +1,63 @@
+@import "../../styles/variables.scss";
+
+.sneakpeek {
+  width: 100%;
+  padding: 8px calc((100% - 1024px) / 2);
+
+  &-title {
+    padding: 32px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: $green;
+
+    @media (max-width: 768px) {
+      padding: 16px;
+    }
+
+    @media (max-width: 425px) {
+      padding: 8px;
+    }
+  }
+
+  &-wrapper {
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    & > div {
+      &:not(:last-child) {
+        margin-right: 36px;
+
+        @media (max-width: 768px) {
+          margin-right: 0;
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 16px;
+      grid-template-columns: auto;
+    }
+
+    @media (max-width: 425px) {
+      padding: 8px;
+    }
+  }
+
+  &-iterator {
+    justify-content: center;
+  }
+
+  &-comment {
+    & > span {
+      font-size: 18px;
+      color: $green;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

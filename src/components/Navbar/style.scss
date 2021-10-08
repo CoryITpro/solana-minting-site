@@ -1,0 +1,109 @@
+@import "../../styles/variables.scss";
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  padding: 8px calc((100% - 1024px) / 2);
+  align-items: center;
+  backdrop-filter: blur(4px);
+  background-color: rgba($color: $black, $alpha: 0.9);
+  justify-content: space-between;
+  z-index: 99;
+
+  &-logo {
+    font-size: 24px;
+    padding-left: 32px;
+    color: $green;
+
+    @media (max-width: 768px) {
+      padding-left: 16px;
+    }
+
+    @media (max-width: 425px) {
+      padding-left: 8px;
+    }
+  }
+
+  &-wrapper {
+    align-items: center;
+    padding-right: 16px;
+
+    @media (max-width: 768px) {
+      padding-right: 16px;
+    }
+
+    @media (max-width: 425px) {
+      padding-right: 8px;
+    }
+
+    & > div {
+      &:not(:last-child) {
+        margin-right: 48px;
+      }
+    }
+  }
+
+  &-links {
+    display: inline;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    &-anchor {
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      color: $green;
+      transition: 0.3s;
+
+      &:hover {
+        color: $black;
+      }
+
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+  }
+
+  &-social {
+    & > a {
+      text-decoration: none;
+      color: black;
+      font-size: 32px;
+      color: $green;
+      transition: 0.3s;
+
+      &:hover {
+        color: $black;
+      }
+
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+
+    & > svg {
+      font-size: 32px;
+      margin: 0 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      color: $green;
+      display: none;
+
+      &:hover {
+        color: $black;
+      }
+
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      @media (max-width: 768px) {
+        display: inline;
+        margin: 0 0 0 16px;
+      }
+    }
+  }
+}
