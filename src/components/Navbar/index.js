@@ -2,24 +2,17 @@ import { Link } from "react-scroll"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDiscord, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
+import LOGO from "resources/logo.png"
 import "./style.scss"
 
 const Navbar = ({ onHandleSidebar }) => (
   <div className="navbar flex">
-    <div className="navbar-logo">CLGs</div>
+    <div className="navbar-logo">
+      <img src={LOGO} alt="logo" />
+      CLGs
+    </div>
     <div className="navbar-wrapper flex">
-      <div className="navbar-links">
-        <Link
-          className="navbar-links-anchor"
-          activeClass="active"
-          to={"sneakpeek"}
-          spy={true}
-          smooth={true}
-          offset={-55}
-          duration={500}
-        >
-          Rarity
-        </Link>
+      <div className="navbar-links flex">
         <Link
           className="navbar-links-anchor"
           activeClass="active"
@@ -30,6 +23,17 @@ const Navbar = ({ onHandleSidebar }) => (
           duration={500}
         >
           Roadmap
+        </Link>
+        <Link
+          className="navbar-links-anchor"
+          activeClass="active"
+          to={"game"}
+          spy={true}
+          smooth={true}
+          offset={-55}
+          duration={500}
+        >
+          The Game
         </Link>
         <Link
           className="navbar-links-anchor"
@@ -53,24 +57,17 @@ const Navbar = ({ onHandleSidebar }) => (
         >
           FAQ
         </Link>
-      </div>
-      <div className="navbar-social">
         <a
-          aria-label="twitter"
-          href="https://twitter.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FontAwesomeIcon icon={faTwitter} />
-        </a>
-        <a
+          className="navbar-links-discord"
           aria-label="discord"
           href="https://discord.gg/asdf"
           target="_blank"
           rel="noreferrer"
         >
-          <FontAwesomeIcon icon={faDiscord} />
+          Discord
         </a>
+      </div>
+      <div className="navbar-social">
         <FontAwesomeIcon icon={faBars} onClick={onHandleSidebar} />
       </div>
     </div>

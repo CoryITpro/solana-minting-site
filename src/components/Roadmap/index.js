@@ -8,7 +8,6 @@ const generateRoadmap = (changeRoadmap) =>
       {changeRoadmap ? (
         <>
           <div className="roadmap-item-milestones flex">
-            <div className="roadmap-item-milestones-icon flex flex-column"></div>
             <div className="roadmap-item-milestones-line"></div>
           </div>
           <div className="show flex flex-column">
@@ -27,7 +26,6 @@ const generateRoadmap = (changeRoadmap) =>
             ))}
           </div>
           <div className="roadmap-item-milestones flex">
-            <div className="roadmap-item-milestones-icon flex flex-column"></div>
             <div className="roadmap-item-milestones-line"></div>
           </div>
           <div className={`${index % 2 ? "show flex flex-column" : ""}`}>
@@ -62,7 +60,7 @@ const Roadmap = () => {
 
   return (
     <div className="roadmap">
-      <div className="roadmap-title">Roadmap</div>
+      <div className="roadmap-title">/// The Release ///</div>
       <div className="roadmap-wrapper">{generateRoadmap(changeRoadmap)}</div>
     </div>
   )

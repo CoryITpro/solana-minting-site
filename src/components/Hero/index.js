@@ -14,7 +14,7 @@ const Hero = () => {
   }, [timeLeft])
 
   return (
-    <div className="hero">
+    <div className="hero flex flex-column">
       <div className="hero-title flex flex-column">
         <span>Welcome to the</span>
         <span>Cool Llama Gangs</span>

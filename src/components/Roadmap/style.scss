@@ -9,7 +9,7 @@
     text-align: center;
     font-size: 36px;
     font-weight: bold;
-    color: $green;
+    color: $white;
 
     @media (max-width: 768px) {
       padding: 16px;
@@ -24,25 +24,43 @@
     padding: 0 32px 32px 40px;
 
     @media (max-width: 768px) {
-      padding: 0 16px 16px 24px;
+      padding: 0 16px 16px 16px;
     }
 
     @media (max-width: 425px) {
-      padding: 0 8px 8px 16px;
+      padding: 0 8px 8px 8px;
     }
   }
 
   &-item {
     display: grid;
-    grid-template-columns: calc(50% - 40px) 80px calc(50% - 40px);
+    grid-template-columns: calc(50% - 30px) 60px calc(50% - 30px);
 
     @media (max-width: 768px) {
-      grid-template-columns: 64px calc(100% - 72px);
+      grid-template-columns: 24px calc(100% - 24px);
+    }
+
+    &:nth-child(1) {
+      & > div {
+        &:nth-child(2) {
+          border-radius: 50% 50% 0 0;
+          overflow: hidden;
+        }
+      }
+    }
+
+    &:last-child {
+      & > div {
+        &:nth-child(2) {
+          border-radius: 0 0 50% 50%;
+          overflow: hidden;
+        }
+      }
     }
 
     & > div {
-      &:not(:last-child) {
-        margin-right: 24px;
+      &:nth-child(2) {
+        margin: 0 8px;
       }
     }
 
@@ -57,9 +75,9 @@
       align-items: center;
 
       &-line {
-        width: 8px;
+        width: 14px;
         height: 100%;
-        background-color: $green;
+        background-color: $blue-light;
       }
 
       &-icon {
@@ -83,12 +101,9 @@
   opacity: 1 !important;
   font-size: 20px;
   font-weight: bold;
-  color: $white;
-  background-color: $green;
-  border-radius: 8px;
-  border: 2px solid $white;
-  box-shadow: 0 0 0 4px rgba($color: $green, $alpha: 1);
-  padding: 8px;
+  color: $black;
+  background-image: url("../../resources/frame.png");
+  background-size: 100% 100%;
   margin: 16px 0;
 
   & > span {

@@ -2,6 +2,7 @@ import Navbar from "components/Navbar"
 import Hero from "components/Hero"
 import SneakPeek from "components/SneakPeek"
 import Roadmap from "components/Roadmap"
+import Game from "components/Game"
 import Team from "components/Team"
 import FAQ from "components/FAQ"
 import Policy from "components/Policy"
@@ -17,6 +18,7 @@ const Dashboard = ({ showSidebar, onHandleSidebar }) => (
     <Hero />
     <SneakPeek />
     <Roadmap />
+    <Game />
     <Team />
     <FAQ />
     <Policy />
