@@ -18,7 +18,7 @@ const SneakPeek = () => {
 
   return (
     <div className="sneakpeek">
-      <div className="sneakpeek-title">Meet the Llamas</div>
+      <div className="sneakpeek-title">/// Our Story & Goal ///</div>
       <div className="sneakpeek-wrapper">
         <div className="sneakpeek-iterator flex">
           <SneakPeekImage image={peekImage} />
