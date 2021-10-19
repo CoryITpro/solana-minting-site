@@ -1,44 +1,46 @@
 export const Roadmaps = [
   {
-    title: "Launch pre-sale",
+    title: "EARLY ACCESS - 1000 Mints",
     content: [
-      "A pre-sale of 2000 sloths will take place on the 4th October. This mint will take place on site, and we expect them to go quickly! Pre-sale slots can be won in giveaways and competitions, so keep an eye on our Twitter and Discord channels. 5 days after our pre-sale, we will host our public sale.",
+      "1,000 Coollamas are open to mint for our early access participants.",
+      "These early Coollamas are also guaranteed to enter first bracket of giveaways raffle.",
     ],
   },
   {
-    title: "Succesful Launch – Early October Mint date to announced soon",
+    title: "2000 Minted",
     content: [
-      "We will successfully launch 8,000 members of the Soloth Street Club NFTs on Solana without bonding-curve and random distribution. This ensures a fair minting process, and allows everyone a chance to own one! Pre-sale members will be allowed to mint again.",
+      "We are giving away a total of 🦧1 Degen Ape Academy + 💰18000 USDT to 4 lucky winners of our first 2,000 mints. After the early access, another 1,000 Coollamas for the public will be able to enter the raffle.",
+      "Also we are adding 30 SOL into our community wallet.",
     ],
   },
   {
-    title: "Paying It Forward",
+    title: "8888 Minted",
     content: [
-      "A $50,000 Crypto Donation will be made to the Sloth Conservation Foundation upon full minting.",
-      "We have already adopted two sloths, Luna & Sol, who be our first official real world Sloth ambassadors!",
-      "We hope to add more as the project develops, and protect more sloths just like Luna and Sol.",
+      "Giving away a total of another 💰12000 USDT to 6 lucky winners.",
+      "Another 150 SOL will go to the community wallet.",
     ],
   },
   {
-    title:
-      "Soloth Street Merchandise – Soloth Street Store will be released soon after full minting!",
+    title: "Royalties",
     content: [
-      "Provide proof of ownership to get access to the Soloth Store, and get your NFT printed on caps, hoodies and much more. As well as loads of exclusive owners-only merchandise.",
+      "30% of all royalties will continue to be added into the community wallet.",
+      "Community will determine the direction of spending. Raffles, airdrops, charity, floor sweeping, marketing, 100% community decide.",
     ],
   },
   {
-    title: "Community funds",
+    title: "Website Fully Upgrade",
     content: [
-      "A community wallet will be set aside with 2.5% of the profits, the $SOL will be put into long-term staking. The community wallet will allow Soloth Street Club holders to determine whether to use the $SOL, or to HODL it. This wallet will grow along with Solana and will help to grow the project as well as fund other initiatives. Sloth Sanctuary anyone?",
+      "Indexing rarity and Coollamas stats onto our website.",
+      "You will be able to check all stats of your Coollamas and get ready for the war.",
     ],
   },
   {
-    title: "Website upgrades",
+    title: "Prepare Season 2 Collection for The War",
     content: [
-      "My Soloths: View your soloths on site",
-      "Soloth Rarity: View soloth rarity on site",
-      "Soloth marketplace: Trade your soloths on site – expected in November and will act as our future NFT marketplace for other inhabitants of Sol City too!",
-      "Future projects - The first 1000 soloth holders will be rewarded for finding us early, and will be airdropped a free additional Sol City NFT from our currently unnannounced project directly related to Soloths. The following 2000 holders will be awarded a guaranteed pre-sale slot for our next project too!",
+      "A community-base story game involving seasons of our collections.",
+      "As the story develops, your NFTs will become more and more valuable",
+      "Community members will be able to contribute to any side of their liking. Higher your 'Contribution Score', more rewards you will receive when season ends.",
+      "The winning faction will also receive extra royalties into their community wallet.",
     ],
   },
 ]

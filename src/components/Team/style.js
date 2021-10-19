@@ -1,8 +1,25 @@
 import styled from "styled-components"
 
 export const TeamSection = styled.div`
+  position: relative;
   width: 100%;
-  padding: 8px calc((100% - 1024px) / 2);
+  padding: 128px calc((100% - 1280px) / 2) 32px;
+  z-index: 3;
+
+  @media (max-width: 768px) {
+    padding: 64px calc((100% - 1280px) / 2) 32px;
+  }
+`
+
+export const TeamBackgroundWrapper = styled.div`
+  position: absolute;
+  width: 100%;
+
+  & > img {
+    width: 100%;
+    max-height: 700px;
+    z-index: 0;
+  }
 `
 
 export const TeamTitle = styled.div`
@@ -10,7 +27,7 @@ export const TeamTitle = styled.div`
   text-align: center;
   font-size: 36px;
   font-weight: bold;
-  color: ${(props) => props.theme.green};
+  color: ${(props) => props.theme.white};
 
   @media (max-width: 768px) {
     padding: 16px;
@@ -24,10 +41,10 @@ export const TeamTitle = styled.div`
 export const TeamMemberWrapper = styled.div`
   padding: 16px 32px;
   display: grid;
-  grid-template-columns: calc(25% - 18px) calc(25% - 18px) calc(25% - 18px) calc(
-      25% - 18px
+  grid-template-columns: calc(25% - 24px) calc(25% - 24px) calc(25% - 24px) calc(
+      25% - 24px
     );
-  gap: 24px;
+  gap: 32px;
 
   @media (max-width: 768px) {
     grid-template-columns: calc(50% - 12px) calc(50% - 12px);
@@ -51,11 +68,11 @@ export const TeamMember = styled.div`
   & > span {
     font-size: 16px;
     text-align: center;
-    color: ${(props) => props.theme.black};
+    color: ${(props) => props.theme.white};
 
     &:not(:last-child) {
       font-size: 24px;
-      color: ${(props) => props.theme.green};
+      color: ${(props) => props.theme.white};
       margin-top: 8px;
     }
   }
@@ -64,7 +81,7 @@ export const TeamMember = styled.div`
     content: "";
     width: 100%;
     padding-top: 100%;
-    border-radius: 16px;
+    border-radius: 48px;
     background-size: cover;
     background-image: url(${(props) => props.image});
     overflow: hidden;

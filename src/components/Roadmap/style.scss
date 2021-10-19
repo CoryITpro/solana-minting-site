@@ -1,22 +1,62 @@
 @import "../../styles/variables.scss";
 
 .roadmap {
+  position: relative;
   width: 100%;
-  padding: 8px calc((100% - 1024px) / 2);
+  padding: 128px calc((100% - 1280px) / 2);
+  z-index: 3;
+
+  @media (max-width: 768px) {
+    padding: 64px calc((100% - 1280px) / 2) 32px;
+  }
+
+  &-decoration {
+    position: absolute;
+    width: 480px;
+    left: 0;
+
+    @media (max-width: 1280px) {
+      width: 400px;
+    }
+
+    @media (max-width: 768px) {
+      position: relative;
+    }
+
+    & > img {
+      width: 100%;
+    }
+
+    &-bottom {
+      position: absolute;
+      width: 400px;
+      padding-top: 64px;
+      right: 0;
+
+      @media (max-width: 768px) {
+        position: relative;
+        margin-left: auto;
+      }
+
+      & > img {
+        width: 100%;
+      }
+    }
+  }
 
   &-title {
-    padding: 32px;
+    padding: 32px 32px 160px;
     text-align: center;
     font-size: 36px;
     font-weight: bold;
     color: $white;
 
     @media (max-width: 768px) {
-      padding: 16px;
+      padding: 16px 16px 64px;
     }
 
     @media (max-width: 425px) {
-      padding: 8px;
+      padding: 8px 8px 64px;
     }
   }
 
@@ -34,33 +74,37 @@
 
   &-item {
     display: grid;
-    grid-template-columns: calc(50% - 30px) 60px calc(50% - 30px);
+    grid-template-columns: calc(50% - 40px) 80px calc(50% - 40px);
 
     @media (max-width: 768px) {
-      grid-template-columns: 24px calc(100% - 24px);
+      grid-template-columns: 32px calc(100% - 32px);
     }
 
-    &:nth-child(1) {
-      & > div {
-        &:nth-child(2) {
-          border-radius: 50% 50% 0 0;
-          overflow: hidden;
+    &:first-child {
+      .roadmap-item-milestones {
+        margin-top: -96px;
+
+        @media (max-width: 768px) {
+          margin-top: -32px;
+        }
+
+        &-line {
+          border-radius: 10px 10px 0 0;
         }
       }
     }
 
     &:last-child {
-      & > div {
-        &:nth-child(2) {
-          border-radius: 0 0 50% 50%;
-          overflow: hidden;
-        }
-      }
-    }
+      .roadmap-item-milestones {
+        margin-bottom: -96px;
 
-    & > div {
-      &:nth-child(2) {
-        margin: 0 8px;
+        @media (max-width: 768px) {
+          margin-bottom: -32px;
+        }
+
+        &-line {
+          border-radius: 0 0 10px 10px;
+        }
       }
     }
 
@@ -74,10 +118,18 @@
       justify-content: center;
       align-items: center;
 
+      @media (max-width: 768px) {
+        justify-content: flex-start;
+      }
+
       &-line {
         width: 14px;
         height: 100%;
         background-color: $blue-light;
+
+        @media (max-width: 768px) {
+          width: 12px;
+        }
       }
 
       &-icon {
@@ -101,10 +153,13 @@
   opacity: 1 !important;
   font-size: 20px;
   font-weight: bold;
-  color: $black;
-  background-image: url("../../resources/frame.png");
+  color: $white;
   background-size: 100% 100%;
-  margin: 16px 0;
+  margin: -32px 0;
+
+  @media (max-width: 768px) {
+    margin: 32px 0;
+  }
 
   & > span {
     font-size: 16px;

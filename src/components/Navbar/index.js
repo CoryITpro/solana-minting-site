@@ -9,7 +9,7 @@ const Navbar = ({ onHandleSidebar }) => (
   <div className="navbar flex">
     <div className="navbar-logo">
       <img src={LOGO} alt="logo" />
-      CLGs
+      CLG
     </div>
     <div className="navbar-wrapper flex">
       <div className="navbar-links flex">
@@ -60,11 +60,20 @@ const Navbar = ({ onHandleSidebar }) => (
         <a
           className="navbar-links-discord"
           aria-label="discord"
-          href="https://discord.gg/asdf"
+          href="https://discord.gg/Zymu7r2u7w"
           target="_blank"
           rel="noreferrer"
         >
-          Discord
+          <FontAwesomeIcon icon={faDiscord} />
+        </a>
+        <a
+          className="navbar-links-discord"
+          aria-label="discord"
+          href="https://twitter.com/CoollamaGangNFT"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faTwitter} />
         </a>
       </div>
       <div className="navbar-social">

@@ -3,10 +3,14 @@
 .navbar {
   width: 100%;
   position: absolute;
-  padding: 32px calc((100% - 1024px) / 2) 0;
+  padding: 32px calc((100% - 1280px) / 2) 0;
   align-items: flex-end;
   justify-content: space-between;
   z-index: 99;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 
   &-logo {
     font-size: 24px;
@@ -86,7 +90,7 @@
       }
 
       &:not(:last-child) {
-        margin-right: 16px;
+        margin-right: 32px;
       }
     }
 
@@ -95,7 +99,7 @@
       margin: 0 16px;
       cursor: pointer;
       transition: 0.3s;
-      color: $green;
+      color: $black;
       display: none;
 
       &:hover {

@@ -1,42 +1,32 @@
 export const FAQs = [
   {
-    question: "What are the Llama Gangs?",
+    question: "How many traits do you have?",
     answer:
-      "The Cool Llama Gangs is an exclusive club of 10,000 Llamas that hang around on the Cardano Blockchain. Keep an eye out for rare combinations, some Llamas out there are big characters!",
+      "Each Coollama is uniquely created from over 150+ traits, with more than hundreds of millions of possibilities.",
   },
   {
-    question: "What are the Llama Gangs?",
+    question: "Where can I buy a Coollama?",
     answer:
-      "The Cool Llama Gangs is an exclusive club of 10,000 Llamas that hang around on the Cardano Blockchain. Keep an eye out for rare combinations, some Llamas out there are big characters!",
+      "You can mint Coollamas here directly on our website, by connecting your Solana wallet when we launch.",
   },
   {
-    question: "What are the Llama Gangs?",
-    answer:
-      "The Cool Llama Gangs is an exclusive club of 10,000 Llamas that hang around on the Cardano Blockchain. Keep an eye out for rare combinations, some Llamas out there are big characters!",
+    question: "When will the Coollama Gang release?",
+    answer: "25th October 2021, 9PM UTC.",
   },
   {
-    question: "What are the Llama Gangs?",
-    answer:
-      "The Cool Llama Gangs is an exclusive club of 10,000 Llamas that hang around on the Cardano Blockchain. Keep an eye out for rare combinations, some Llamas out there are big characters!",
+    question: "How much is the mint cost?",
+    answer: "The mint price will be fixed at 1 SOL.",
   },
   {
-    question: "What are the Llama Gangs?",
-    answer:
-      "The Cool Llama Gangs is an exclusive club of 10,000 Llamas that hang around on the Cardano Blockchain. Keep an eye out for rare combinations, some Llamas out there are big characters!",
+    question: "Which wallet should I use?",
+    answer: "We recommend using Phantom, Solflare or Sollet.",
   },
   {
-    question: "What are the Llama Gangs?",
-    answer:
-      "The Cool Llama Gangs is an exclusive club of 10,000 Llamas that hang around on the Cardano Blockchain. Keep an eye out for rare combinations, some Llamas out there are big characters!",
+    question: "Where can I check the rarity of my Coollama?",
+    answer: "The rarity chart will be revealed on launch date in our discord.",
   },
   {
-    question: "What are the Llama Gangs?",
-    answer:
-      "The Cool Llama Gangs is an exclusive club of 10,000 Llamas that hang around on the Cardano Blockchain. Keep an eye out for rare combinations, some Llamas out there are big characters!",
-  },
-  {
-    question: "What are the Llama Gangs?",
-    answer:
-      "The Cool Llama Gangs is an exclusive club of 10,000 Llamas that hang around on the Cardano Blockchain. Keep an eye out for rare combinations, some Llamas out there are big characters!",
+    question: "Which marketplaces are you getting on after launch?",
+    answer: "We will be listed on Magic Eden, Solanart, & Digitaleyes.",
   },
 ]

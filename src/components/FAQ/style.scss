@@ -2,14 +2,19 @@
 
 .faq {
   width: 100%;
-  padding: 8px calc((100% - 1024px) / 2);
+  padding: 128px calc((100% - 1280px) / 2) 32px;
+  z-index: 4;
+
+  @media (max-width: 768px) {
+    padding: 64px calc((100% - 1280px) / 2) 32px;
+  }
 
   &-title {
     padding: 32px;
     text-align: center;
     font-size: 36px;
     font-weight: bold;
-    color: $green;
+    color: $white;
 
     @media (max-width: 768px) {
       padding: 16px;
@@ -33,18 +38,19 @@
   }
 
   &-item {
-    border-top: 1px solid $green;
-    padding: 32px;
+    border-top: 1px solid $white;
+    padding: 24px;
     transition: 0.5s;
+    z-index: 4;
 
     &:last-child {
-      border-bottom: 1px solid $green;
+      border-bottom: 1px solid $white;
     }
 
     & > span {
       align-items: center;
       justify-content: space-between;
-      color: $green;
+      color: $white;
       font-size: 24px;
       font-weight: bold;
       cursor: pointer;
@@ -56,6 +62,8 @@
       opacity: 0;
       overflow: hidden;
       transition: 0.5s;
+      font-size: 18px;
+      color: $white;
     }
 
     &-icon {

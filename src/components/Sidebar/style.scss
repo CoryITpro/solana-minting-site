@@ -7,7 +7,8 @@
   right: -360px;
   padding: 64px 0 0;
   transition: 0.3s;
-  background-color: $red;
+  background-color: rgba($color: $pink-dark, $alpha: 0.8);
+  backdrop-filter: blur(16px);
   z-index: 100;
 
   &-show {
@@ -21,10 +22,15 @@
 
   & > a {
     text-align: center;
+    font-size: 20px;
 
     &:not(:last-child) {
       margin-right: 0;
-      margin-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    & > svg {
+      color: $black;
     }
   }
 }

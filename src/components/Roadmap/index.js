@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react"
 import { Roadmaps } from "constants/roadmap"
+import RoadmapFrame from "./Frame"
+import CloudPlanet from "resources/cloud-planet.png"
+import Cloud from "resources/cloud.png"
 import "./style.scss"
 
 const generateRoadmap = (changeRoadmap) =>
@@ -11,28 +14,34 @@ const generateRoadmap = (changeRoadmap) =>
             <div className="roadmap-item-milestones-line"></div>
           </div>
           <div className="show flex flex-column">
-            {data.title}
-            {data.content.map((data, index) => (
-              <span key={index}>{data}</span>
-            ))}
+            <RoadmapFrame>
+              {data.title}
+              {data.content.map((data, index) => (
+                <span key={index}>{data}</span>
+              ))}
+            </RoadmapFrame>
           </div>
         </>
       ) : (
         <>
           <div className={`${index % 2 ? "" : "show flex flex-column"}`}>
-            {data.title}
-            {data.content.map((data, index) => (
-              <span key={index}>{data}</span>
-            ))}
+            <RoadmapFrame>
+              {data.title}
+              {data.content.map((data, index) => (
+                <span key={index}>{data}</span>
+              ))}
+            </RoadmapFrame>
           </div>
           <div className="roadmap-item-milestones flex">
             <div className="roadmap-item-milestones-line"></div>
           </div>
           <div className={`${index % 2 ? "show flex flex-column" : ""}`}>
-            {data.title}
-            {data.content.map((data, index) => (
-              <span key={index}>{data}</span>
-            ))}
+            <RoadmapFrame>
+              {data.title}
+              {data.content.map((data, index) => (
+                <span key={index}>{data}</span>
+              ))}
+            </RoadmapFrame>
           </div>
         </>
       )}
@@ -60,8 +69,14 @@ const Roadmap = () => {
 
   return (
     <div className="roadmap">
+      <div className="roadmap-decoration">
+        <img src={CloudPlanet} alt="decoration" />
+      </div>
       <div className="roadmap-title">/// The Release ///</div>
       <div className="roadmap-wrapper">{generateRoadmap(changeRoadmap)}</div>
+      <div className="roadmap-decoration-bottom">
+        <img src={Cloud} alt="decoration" />
+      </div>
     </div>
   )
 }

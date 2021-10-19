@@ -2,7 +2,16 @@
 
 .sneakpeek {
   width: 100%;
-  padding: 8px calc((100% - 1024px) / 2);
+  padding: 128px calc((100% - 1280px) / 2) 64px;
+  background-image: url("../../resources/our-story.png");
+  background-size: 100% 638px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 4;
+
+  @media (max-width: 768px) {
+    padding: 64px calc((100% - 1280px) / 2) 64px;
+  }
 
   &-title {
     padding: 32px;
@@ -53,12 +62,20 @@
   }
 
   &-comment {
+    align-items: center;
+    justify-content: center;
+
     & > span {
       font-size: 18px;
-      color: $green;
+      text-align: center;
+      color: $white;
 
       &:not(:last-child) {
-        margin-bottom: 16px;
+        margin-bottom: 32px;
+      }
+
+      @media (max-width: 425px) {
+        padding: 0 24px 24px;
       }
     }
   }

@@ -5,9 +5,7 @@ const Dashboard = lazy(() => import("containers/Dashboard"))
 
 const App = () => (
   <Suspense fallback={<Loading />}>
-    <usePageTop>
-      <Dashboard />
-    </usePageTop>
+    <Dashboard />
   </Suspense>
 )
 

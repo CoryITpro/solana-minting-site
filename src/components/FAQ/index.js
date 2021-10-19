@@ -36,7 +36,7 @@ const FAQ = () => {
 
   return (
     <div className="faq">
-      <div className="faq-title">Frequently Asked Questions</div>
+      <div className="faq-title">/// Frequently Asked Questions ///</div>
       <div className="faq-wrapper">
         {generateFaqItems(selectedItem, setSelectedItem)}
       </div>

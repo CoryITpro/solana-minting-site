@@ -1,6 +1,83 @@
 @import "../../styles/variables.scss";
 
 .game {
+  position: relative;
   width: 100%;
-  padding: 64px calc((100% - 1024px) / 2);
+  padding: 128px calc((100% - 1280px) / 2) 32px;
+
+  @media (max-width: 768px) {
+    padding: 64px calc((100% - 1280px) / 2) 32px;
+  }
+
+  &-title {
+    width: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    font-size: 24px;
+    text-align: center;
+    margin: 16px;
+
+    @media (max-width: 1024px) {
+      width: 180px;
+      font-size: 20px;
+    }
+
+    @media (max-width: 768px) {
+      position: relative;
+      width: 160px;
+      font-size: 18px;
+      margin: 0 auto;
+    }
+
+    & > span {
+      position: absolute;
+      padding: 36px;
+    }
+
+    &:before {
+      display: absolute;
+      content: " ";
+      width: 100%;
+      padding-top: 100%;
+      background-image: url("../../resources/roadmap-title.png");
+      background-size: 100% 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &-roadmap {
+    margin: 48px;
+    border: 1px solid $blue-light;
+    border-radius: 32px;
+
+    @media (max-width: 768px) {
+      margin: 24px;
+    }
+
+    @media (max-width: 425px) {
+      margin: 8px;
+    }
+
+    &-wrapper {
+      margin: 32px;
+
+      @media (max-width: 768px) {
+        margin: 24px;
+      }
+
+      @media (max-width: 425px) {
+        margin: 8px;
+      }
+
+      & > img {
+        width: 100%;
+        border-radius: 24px;
+      }
+    }
+  }
 }
