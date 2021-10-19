@@ -15,6 +15,7 @@ const generateRoadmap = (changeRoadmap) =>
           </div>
           <div className="show flex flex-column">
             <RoadmapFrame>
+              {data.step && <p>{data.step}</p>}
               {data.title}
               {data.content.map((data, index) => (
                 <span key={index}>{data}</span>
@@ -24,25 +25,33 @@ const generateRoadmap = (changeRoadmap) =>
         </>
       ) : (
         <>
-          <div className={`${index % 2 ? "" : "show flex flex-column"}`}>
-            <RoadmapFrame>
-              {data.title}
-              {data.content.map((data, index) => (
-                <span key={index}>{data}</span>
-              ))}
-            </RoadmapFrame>
-          </div>
+          {index % 2 ? (
+            <div></div>
+          ) : (
+            <div className="show flex flex-column">
+              <RoadmapFrame>
+                {data.title}
+                {data.content.map((data, index) => (
+                  <span key={index}>{data}</span>
+                ))}
+              </RoadmapFrame>
+            </div>
+          )}
           <div className="roadmap-item-milestones flex">
             <div className="roadmap-item-milestones-line"></div>
           </div>
-          <div className={`${index % 2 ? "show flex flex-column" : ""}`}>
-            <RoadmapFrame>
-              {data.title}
-              {data.content.map((data, index) => (
-                <span key={index}>{data}</span>
-              ))}
-            </RoadmapFrame>
-          </div>
+          {index % 2 ? (
+            <div className="show flex flex-column">
+              <RoadmapFrame>
+                {data.title}
+                {data.content.map((data, index) => (
+                  <span key={index}>{data}</span>
+                ))}
+              </RoadmapFrame>
+            </div>
+          ) : (
+            <div className="roadmap-step flex">{data.step}</div>
+          )}
         </>
       )}
     </div>

@@ -147,6 +147,20 @@
       }
     }
   }
+
+  &-step {
+    opacity: 1 !important;
+    padding: 36px 0;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: $white;
+
+    &:before {
+      content: "< ";
+      font-size: 36px;
+    }
+  }
 }
 
 .show {
@@ -155,7 +169,7 @@
   font-weight: bold;
   color: $white;
   background-size: 100% 100%;
-  margin: -32px 0;
+  margin: 0px 0;
 
   @media (max-width: 768px) {
     margin: 32px 0;

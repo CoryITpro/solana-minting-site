@@ -11,18 +11,6 @@ const Sidebar = ({ showSidebar, onHandleSidebar }) => (
     <Link
       className="navbar-links-anchor"
       activeClass="active"
-      to={"sneakpeek"}
-      spy={true}
-      smooth={true}
-      offset={0}
-      duration={500}
-      onClick={onHandleSidebar}
-    >
-      Rarity
-    </Link>
-    <Link
-      className="navbar-links-anchor"
-      activeClass="active"
       to={"roadmap"}
       spy={true}
       smooth={true}
@@ -30,7 +18,19 @@ const Sidebar = ({ showSidebar, onHandleSidebar }) => (
       duration={500}
       onClick={onHandleSidebar}
     >
-      Roadmap
+      Road map
+    </Link>
+    <Link
+      className="navbar-links-anchor"
+      activeClass="active"
+      to={"game"}
+      spy={true}
+      smooth={true}
+      offset={0}
+      duration={500}
+      onClick={onHandleSidebar}
+    >
+      The Game
     </Link>
     <Link
       className="navbar-links-anchor"

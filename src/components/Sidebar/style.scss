@@ -23,6 +23,7 @@
   & > a {
     text-align: center;
     font-size: 20px;
+    color: $white;
 
     &:not(:last-child) {
       margin-right: 0;
@@ -30,7 +31,7 @@
     }
 
     & > svg {
-      color: $black;
+      color: $white;
     }
   }
 }

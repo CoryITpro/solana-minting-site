@@ -1,5 +1,6 @@
 export const Roadmaps = [
   {
+    step: "🚀The Release",
     title: "EARLY ACCESS - 1000 Mints",
     content: [
       "1,000 Coollamas are open to mint for our early access participants.",
@@ -14,6 +15,7 @@ export const Roadmaps = [
     ],
   },
   {
+    step: "🪐100% Coollamas Onboard",
     title: "8888 Minted",
     content: [
       "Giving away a total of another 💰12000 USDT to 6 lucky winners.",
@@ -28,6 +30,7 @@ export const Roadmaps = [
     ],
   },
   {
+    step: "⚔️Season Preparation⚔️",
     title: "Website Fully Upgrade",
     content: [
       "Indexing rarity and Coollamas stats onto our website.",
