@@ -27,7 +27,7 @@ export const TeamTitle = styled.div`
   text-align: center;
   font-size: 36px;
   font-weight: bold;
-  color: ${(props) => props.theme.yellow};
+  color: ${(props) => props.theme.white};
 
   @media (max-width: 768px) {
     padding: 16px;
@@ -72,7 +72,7 @@ export const TeamMember = styled.div`
 
     &:not(:last-child) {
       font-size: 24px;
-      color: ${(props) => props.theme.white};
+      color: ${(props) => props.theme.purple};
       margin-top: 8px;
     }
   }

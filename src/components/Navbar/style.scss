@@ -16,8 +16,8 @@
     font-size: 24px;
     padding-left: 32px;
     font-weight: bold;
-    text-shadow: 0 0 2px rgba($color: $yellow-dark, $alpha: 0.8);
-    color: $yellow-dark;
+    text-shadow: 0 0 2px rgba($color: $black, $alpha: 0.8);
+    color: $black;
 
     @media (max-width: 768px) {
       padding-left: 16px;
@@ -65,8 +65,8 @@
       font-weight: bold;
       transition: 0.3s;
       justify-content: center;
-      color: $yellow-dark;
-      text-shadow: 0 0 2px rgba($color: $yellow-dark, $alpha: 0.8);
+      color: $black;
+      text-shadow: 0 0 2px rgba($color: $black, $alpha: 0.8);
 
       &:not(:last-child) {
         margin-right: 32px;
@@ -90,12 +90,8 @@
       text-decoration: none;
       color: black;
       font-size: 32px;
-      color: $green;
+      color: $black;
       transition: 0.3s;
-
-      &:hover {
-        color: $black;
-      }
 
       &:not(:last-child) {
         margin-right: 32px;
@@ -107,11 +103,11 @@
       margin: 0 16px;
       cursor: pointer;
       transition: 0.3s;
-      color: $yellow-dark;
+      color: $black;
       display: none;
 
       &:hover {
-        color: $yellow-dark;
+        color: $black;
       }
 
       &:not(:last-child) {
