@@ -8,6 +8,8 @@
 
   &-wrapper {
     position: absolute;
+    width: 4800px;
+    right: 0px;
     animation: slider 60s linear infinite;
   }
 
@@ -22,14 +24,14 @@
 
 @keyframes slider {
   0% {
-    left: 0%;
+    right: 0px;
   }
 
   50% {
-    left: -100%;
+    right: calc(100% - 4800px);
   }
 
   100% {
-    left: 0%;
+    right: 0px;
   }
 }

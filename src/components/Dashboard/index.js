@@ -6,6 +6,7 @@ import Roadmap from "components/Roadmap"
 import Game from "components/Game"
 import Team from "components/Team"
 import FAQ from "components/FAQ"
+import Footer from "components/Footer"
 
 import "./style.scss"
 import Sidebar from "components/Sidebar"
@@ -21,6 +22,7 @@ const Dashboard = ({ showSidebar, onHandleSidebar }) => (
     <Game />
     <Team />
     <FAQ />
+    <Footer />
   </div>
 )
 
