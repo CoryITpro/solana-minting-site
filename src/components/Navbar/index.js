@@ -67,7 +67,7 @@ const Navbar = ({ onHandleSidebar }) => (
           <FontAwesomeIcon icon={faDiscord} />
         </a>
         <a
-          className="navbar-links-discord"
+          className="navbar-links-twitter"
           aria-label="discord"
           href="https://twitter.com/CoollamaGangNFT"
           target="_blank"

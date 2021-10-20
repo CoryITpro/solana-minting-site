@@ -4,7 +4,7 @@
   width: 100%;
   padding: 128px calc((100% - 1280px) / 2) 64px;
   background-image: url("../../resources/our-story.png");
-  background-size: 100% 638px;
+  background-size: 100% 680px;
   background-position: center center;
   background-repeat: no-repeat;
   z-index: 4;
@@ -18,7 +18,7 @@
     text-align: center;
     font-size: 36px;
     font-weight: bold;
-    color: $white;
+    color: $yellow-dark;
 
     @media (max-width: 768px) {
       font-size: 32px;
@@ -66,10 +66,10 @@
     justify-content: center;
 
     & > span {
-      font-size: 18px;
+      font-size: 22px;
       text-align: center;
       padding: 0 128px 0 0;
-      color: $white;
+      color: $yellow-dark;
 
       &:not(:last-child) {
         margin-bottom: 32px;
@@ -80,10 +80,12 @@
       }
 
       @media (max-width: 768px) {
+        font-size: 20px;
         padding: 0 24px 24px;
       }
 
       @media (max-width: 425px) {
+        font-size: 18px;
         padding: 0 24px 24px;
       }
     }

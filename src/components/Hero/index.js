@@ -18,14 +18,15 @@ const Hero = () => {
     <div className="hero flex flex-column">
       <div className="hero-title flex flex-column">
         <span>Welcome to the</span>
-        <span>Cool Llama Gang!</span>
+        <span>Coollama Gang!</span>
         <div className="hero-comment">
-          Here on Planet PXON9 is full of mysteries...
+          Here on Planet PXON9
+          <br /> is full of mysteries...
         </div>
       </div>
       {Object.keys(timeLeft).length === 0 ? (
         <div className="hero-mint flex">
-          <button onClick={() => alert("Mint Clicked")}>MINT</button>
+          <button>MINT</button>
         </div>
       ) : (
         <div className="hero-timer flex">

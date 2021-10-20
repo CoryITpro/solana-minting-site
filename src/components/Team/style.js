@@ -27,7 +27,7 @@ export const TeamTitle = styled.div`
   text-align: center;
   font-size: 36px;
   font-weight: bold;
-  color: ${(props) => props.theme.white};
+  color: ${(props) => props.theme.yellow};
 
   @media (max-width: 768px) {
     padding: 16px;

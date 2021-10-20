@@ -3,6 +3,7 @@ import GameRoadmap from "resources/game_map.png"
 
 const Game = () => (
   <div className="game">
+    <div className="title">/// Game Roadmap ///</div>
     <div className="game-title">
       <span>Game Roadmap</span>
     </div>

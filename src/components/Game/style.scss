@@ -9,6 +9,16 @@
     padding: 64px calc((100% - 1280px) / 2) 32px;
   }
 
+  & > .title {
+    color: $yellow-dark;
+    text-align: center;
+    font-size: 32px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
   &-title {
     width: 200px;
     position: absolute;

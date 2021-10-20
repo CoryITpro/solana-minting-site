@@ -57,7 +57,7 @@
     & > span {
       text-align: center;
       padding: 0 24px 0 48px;
-      color: $yellow-dark;
+      color: $white;
       font-size: 48px;
       font-weight: bold;
       z-index: 2;
@@ -90,7 +90,7 @@
     width: 100%;
     text-align: center;
     padding: 0 60px 0 88px;
-    color: $yellow-dark;
+    color: $white;
     z-index: 2;
     font-size: 24px;
 
@@ -107,22 +107,21 @@
     z-index: 2;
 
     &-item {
-      padding: 16px 24px;
-      width: 120px;
+      margin: 8px;
+      width: 96px;
+      padding: 8px;
+      background-image: linear-gradient(135deg, $pink-light, $blue-lighter);
+      border-radius: 16px;
 
       @media (max-width: 768px) {
         padding: 16px;
         width: 90px;
       }
 
-      &:not(:last-child) {
-        border-right: 1px solid $green;
-      }
-
       & > span {
         text-align: center;
         font-size: 16px;
-        color: $green;
+        color: $red;
 
         &:first-child {
           font-size: 48px;

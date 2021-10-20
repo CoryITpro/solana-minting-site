@@ -4,7 +4,7 @@ export const SneakPeekImage = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 320px;
+  max-width: 360px;
   border-radius: 16px;
   overflow: hidden;
 

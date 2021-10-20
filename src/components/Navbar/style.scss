@@ -4,7 +4,7 @@
   width: 100%;
   position: absolute;
   padding: 32px calc((100% - 1280px) / 2) 0;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   z-index: 99;
 
@@ -16,7 +16,8 @@
     font-size: 24px;
     padding-left: 32px;
     font-weight: bold;
-    text-shadow: 0 0 2px rgba($color: $black, $alpha: 0.8);
+    text-shadow: 0 0 2px rgba($color: $yellow-dark, $alpha: 0.8);
+    color: $yellow-dark;
 
     @media (max-width: 768px) {
       padding-left: 16px;
@@ -63,17 +64,24 @@
       font-size: 20px;
       font-weight: bold;
       transition: 0.3s;
-      color: $black;
-      text-shadow: 0 0 2px rgba($color: $black, $alpha: 0.8);
-
-      &::after {
-        content: "";
-        height: 16px;
-      }
+      justify-content: center;
+      color: $yellow-dark;
+      text-shadow: 0 0 2px rgba($color: $yellow-dark, $alpha: 0.8);
 
       &:not(:last-child) {
         margin-right: 32px;
       }
+    }
+
+    &-discord {
+      padding: 0 0 0 16px;
+      font-size: 32px !important;
+      color: #4e89ff !important;
+    }
+
+    &-twitter {
+      font-size: 32px !important;
+      color: #1da1f2 !important;
     }
   }
 
@@ -99,11 +107,11 @@
       margin: 0 16px;
       cursor: pointer;
       transition: 0.3s;
-      color: $black;
+      color: $yellow-dark;
       display: none;
 
       &:hover {
-        color: $black;
+        color: $yellow-dark;
       }
 
       &:not(:last-child) {
