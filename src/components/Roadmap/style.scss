@@ -90,7 +90,29 @@
 
         &-line {
           border-radius: 10px 10px 0 0;
+          background-color: $blue-light;
         }
+      }
+    }
+
+    &:nth-child(2) {
+      .roadmap-item-milestones-line {
+        background-color: $blue-light;
+      }
+    }
+    &:nth-child(3) {
+      .roadmap-item-milestones-line {
+        background-image: linear-gradient($blue-light, #89dfda);
+      }
+    }
+    &:nth-child(4) {
+      .roadmap-item-milestones-line {
+        background-image: linear-gradient(#89dfda, #7bddd8);
+      }
+    }
+    &:nth-child(5) {
+      .roadmap-item-milestones-line {
+        background-image: linear-gradient(#7bddd8, #5ad8d2);
       }
     }
 
@@ -104,6 +126,7 @@
 
         &-line {
           border-radius: 0 0 10px 10px;
+          background-image: linear-gradient(#5ad8d2, #3dd8d0);
         }
       }
     }
@@ -125,7 +148,6 @@
       &-line {
         width: 14px;
         height: 100%;
-        background-color: $blue-light;
 
         @media (max-width: 768px) {
           width: 12px;
