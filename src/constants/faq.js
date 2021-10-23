@@ -11,11 +11,12 @@ export const FAQs = [
   },
   {
     question: "When will the Coollama Gang release?",
-    answer: "25th October 2021, 9PM UTC.",
+    answer: "29th October 2021, 9PM UTC.",
   },
   {
     question: "How much is the mint cost?",
-    answer: "The mint price will be fixed at 1 SOL.",
+    answer:
+      "Presale : 0.7 SOL, Public Sale : 1 SOL. If you are interested in presale, check our discord for details",
   },
   {
     question: "Which wallet should I use?",

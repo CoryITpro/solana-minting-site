@@ -62,8 +62,12 @@
       font-weight: bold;
       z-index: 2;
 
+      &:first-child {
+        margin-top: 24px;
+      }
+
       &:not(:last-child) {
-        font-size: 36px;
+        font-size: 32px;
         margin-bottom: 16px;
 
         @media (max-width: 1024px) {

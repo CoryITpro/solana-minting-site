@@ -17,6 +17,15 @@ const SneakPeek = () => {
             true community-based story game on the Solana blockchain, with
             deflationary and rewards mechanism.
           </span>
+          <div className="sneakpeek-hot">
+            30% Royalties back to holders + Another 30% to community wallet
+          </div>
+          <div className="sneakpeek-hot">
+            Biggest Mint Raffle on Solana of over $40000 in giveaways
+          </div>
+          <div className="sneakpeek-hot">
+            First 100 Mints of public sale are completely free
+          </div>
         </div>
       </div>
     </div>
