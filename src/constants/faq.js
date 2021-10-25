@@ -11,7 +11,8 @@ export const FAQs = [
   },
   {
     question: "When will the Coollama Gang release?",
-    answer: "29th October 2021, 9PM UTC.",
+    answer:
+      "Presale : 29th October 2021, 9PM UTC. Public Sale : 1st November, 2021, 9PM UTC.",
   },
   {
     question: "How much is the mint cost?",

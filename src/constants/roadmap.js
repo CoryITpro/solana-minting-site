@@ -1,16 +1,16 @@
 export const Roadmaps = [
   {
     step: "🚀The Release",
-    title: "EARLY ACCESS - 1000 Mints",
+    title: "EARLY ACCESS - 500 Mints",
     content: [
-      "1,000 Coollamas are open to mint for our early access participants.",
+      "500 Coollamas are open to mint for our Presale participants.",
       "These early Coollamas are also guaranteed to enter first bracket of giveaways raffle.",
     ],
   },
   {
     title: "2000 Minted",
     content: [
-      "We are giving away a total of 1 Degen Ape Academy + $18000 USDT to 4 lucky winners of our first 2,000 mints. 1000 mints from presale and 1000 mints from the public will be able to enter the raffle.",
+      "We are giving away a total of 1 Degen Ape Academy + 18000 USDT to 4 lucky winners of our first 2,000 mints. 500 mints from presale and 1500 mints from the public will be able to enter the raffle.",
       "The first 100 mints of public sale are FREE!",
       "Also we are adding 30 SOL into our community wallet.",
     ],

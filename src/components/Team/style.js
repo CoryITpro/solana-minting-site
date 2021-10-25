@@ -34,6 +34,7 @@ export const TeamTitle = styled.div`
   }
 
   @media (max-width: 425px) {
+    font-size: 24px;
     padding: 8px;
   }
 `
