@@ -17,10 +17,10 @@ export const Roadmaps = [
   },
   {
     step: "🪐100% Coollamas Onboard",
-    title: "8888 Minted",
+    title: "3,333 Minted",
     content: [
       "Giving away a total of another $12000 USDT to 6 lucky winners.",
-      "Another 150 SOL will go to the community wallet.",
+      "Another 50 SOL will go to the community wallet.",
     ],
   },
   {

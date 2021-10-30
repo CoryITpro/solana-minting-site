@@ -26,7 +26,11 @@ const Hero = () => {
       </div>
       {Object.keys(timeLeft).length === 0 ? (
         <div className="hero-mint flex">
-          <button>MINT</button>
+          <button>
+            <a href="https://mint.coollamagang.com/" rel="noreferrer">
+              MINT
+            </a>
+          </button>
         </div>
       ) : (
         <div className="hero-timer flex">

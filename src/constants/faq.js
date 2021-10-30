@@ -16,8 +16,7 @@ export const FAQs = [
   },
   {
     question: "How much is the mint cost?",
-    answer:
-      "Presale : 0.7 SOL, Public Sale : 1 SOL. If you are interested in presale, check our discord for details",
+    answer: "The mint price will be fixed at 0.33 SOL.",
   },
   {
     question: "Which wallet should I use?",

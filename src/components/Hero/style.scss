@@ -145,7 +145,6 @@
     & > button {
       padding: 12px 32px;
       background-image: linear-gradient(90deg, $pink-light, $blue-lighter);
-      color: $black;
       font-size: 18px;
       font-weight: bold;
       letter-spacing: 2px;
@@ -154,8 +153,12 @@
       cursor: pointer;
 
       &:hover {
-        color: $white;
         background-image: linear-gradient(270deg, $pink-light, $blue-lighter);
+      }
+
+      & > a {
+        color: $white;
+        text-decoration: none;
       }
     }
   }
