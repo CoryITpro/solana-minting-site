@@ -16,7 +16,7 @@ export const FAQs = [
   },
   {
     question: "How much is the mint cost?",
-    answer: "The mint price will be fixed at 0.33 SOL.",
+    answer: "The mint price will be fixed at 0.66 SOL.",
   },
   {
     question: "Which wallet should I use?",
