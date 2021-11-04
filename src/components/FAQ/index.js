@@ -36,9 +36,7 @@ const FAQ = () => {
 
   return (
     <div className="faq flex flex-column">
-      <div className="faq-title container">
-        /// FREQUENTLY ASKED QUESTIONS ///
-      </div>
+      <div className="faq-title container">FREQUENTLY ASKED QUESTIONS</div>
       <div className="faq-wrapper container">
         {generateFaqItems(selectedItem, setSelectedItem)}
       </div>

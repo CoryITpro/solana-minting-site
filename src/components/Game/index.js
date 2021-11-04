@@ -3,7 +3,7 @@ import GameRoadmap from "resources/game_map.png"
 
 const Game = () => (
   <div className="game flex flex-column">
-    <div className="game-title container">/// GAME ROADMAP ///</div>
+    <div className="game-title container">GAME ROADMAP</div>
     <div className="game-wrapper container">
       <div className="game-decoration">
         <span>Game Roadmap</span>

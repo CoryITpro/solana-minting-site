@@ -26,8 +26,8 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero-news">
-          500 Presale Llamas - SOLD OUT, 2833 llamas left , Public Launch : 8th
-          November, 3PM UTC
+          500 Presale Llamas - SOLD OUT <br />
+          Public Launch : 8th November, 3PM UTC
         </div>
         {Object.keys(timeLeft).length === 0 ? (
           <div className="hero-mint flex">

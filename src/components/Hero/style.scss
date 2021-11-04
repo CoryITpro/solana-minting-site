@@ -90,14 +90,12 @@
   }
 
   &-news {
-    width: 90%;
-    max-width: 1024px;
     position: relative;
     z-index: 2;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    color: $red;
+    color: $black;
     background-image: linear-gradient(135deg, $pink-light, $blue-lighter);
     padding: 24px 16px;
     border-radius: 8px;

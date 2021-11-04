@@ -13,7 +13,7 @@ const generateTeamMembers = () =>
 const Team = () => (
   <>
     <div className="team flex flex-column">
-      <div className="team-title container">/// THE TEAM ///</div>
+      <div className="team-title container">THE TEAM</div>
       <div className="team-wrapper container">{generateTeamMembers()}</div>
     </div>
   </>

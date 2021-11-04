@@ -17,14 +17,13 @@
 
   &-title {
     padding: 32px 0;
-    white-space: nowrap;
     text-align: center;
     font-size: 32px;
     font-weight: bold;
     color: $black;
 
     @media (max-width: 768px) {
-      font-size: 18px;
+      font-size: 24px;
     }
   }
 
@@ -74,13 +73,11 @@
   }
 
   &-comment {
-    align-items: center;
     justify-content: center;
 
     & > span {
       font-size: 18px;
-      text-align: center;
-      padding: 0 128px 0 0;
+      padding: 0 64px 0 0;
       color: $black;
 
       &:not(:last-child) {
@@ -96,6 +93,8 @@
       }
 
       @media (max-width: 768px) {
+        font-size: 16px;
+        text-align: center;
         padding: 0 24px 12px;
       }
     }

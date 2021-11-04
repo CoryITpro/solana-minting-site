@@ -4,7 +4,7 @@ import "./style.scss"
 const SneakPeek = () => {
   return (
     <div className="sneakpeek flex flex-column">
-      <div className="sneakpeek-title container">/// OUR STORY & GOAL ///</div>
+      <div className="sneakpeek-title container">OUR STORY & GOAL</div>
       <div className="sneakpeek-wrapper container">
         <div className="sneakpeek-iterator flex">
           <img src={peekImage} alt="sneakpeak" loading="lazy" />
