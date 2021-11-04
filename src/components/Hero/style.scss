@@ -3,12 +3,12 @@
 .hero {
   position: relative;
   width: 100%;
-  padding: 256px calc((100% - 1280px) / 2) 24px;
-  z-index: 1;
+  padding: 128px 0 24px;
   align-items: center;
+  z-index: 1;
 
-  @media (max-width: 1280px) {
-    padding: 128px calc((100% - 1280px) / 2) 24px;
+  &-wrapper {
+    align-items: center;
   }
 
   &-background {
@@ -87,6 +87,20 @@
         font-size: 64px;
       }
     }
+  }
+
+  &-news {
+    width: 90%;
+    max-width: 1024px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: $red;
+    background-image: linear-gradient(135deg, $pink-light, $blue-lighter);
+    padding: 24px 16px;
+    border-radius: 8px;
   }
 
   &-comment {

@@ -3,11 +3,12 @@
 .roadmap {
   position: relative;
   width: 100%;
-  padding: 128px calc((100% - 1280px) / 2);
+  padding: 64px 0 256px;
+  justify-content: center;
   z-index: 3;
 
   @media (max-width: 768px) {
-    padding: 64px calc((100% - 1280px) / 2) 32px;
+    padding: 64px 0;
   }
 
   &-decoration {
@@ -45,31 +46,16 @@
   }
 
   &-title {
-    padding: 32px 32px 160px;
+    padding: 32px 0 128px;
+    white-space: nowrap;
     text-align: center;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
     color: $black;
 
     @media (max-width: 768px) {
-      padding: 16px 16px 64px;
-    }
-
-    @media (max-width: 425px) {
-      font-size: 24px;
-      padding: 8px 8px 64px;
-    }
-  }
-
-  &-wrapper {
-    padding: 0 32px 32px 40px;
-
-    @media (max-width: 768px) {
-      padding: 0 16px 16px 16px;
-    }
-
-    @media (max-width: 425px) {
-      padding: 0 8px 8px 8px;
+      font-size: 18px;
+      padding: 32px 0 64px;
     }
   }
 

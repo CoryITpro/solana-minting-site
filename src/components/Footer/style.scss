@@ -4,13 +4,13 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 24px 0;
 
   & > a {
-    font-size: 48px !important;
+    font-size: 36px !important;
 
     &:first-child {
-      margin-right: 36px;
+      margin-right: 24px;
     }
   }
 }

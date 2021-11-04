@@ -77,14 +77,16 @@ const Roadmap = () => {
   }
 
   return (
-    <div className="roadmap">
-      <div className="roadmap-decoration">
-        <img src={CloudPlanet} alt="decoration" />
-      </div>
-      <div className="roadmap-title">/// The Release ///</div>
-      <div className="roadmap-wrapper">{generateRoadmap(changeRoadmap)}</div>
-      <div className="roadmap-decoration-bottom">
-        <img src={Cloud} alt="decoration" />
+    <div className="roadmap flex">
+      <div className="roadmap-wrapper container">
+        <div className="roadmap-decoration">
+          <img src={CloudPlanet} alt="decoration" />
+        </div>
+        <div className="roadmap-title">/// THE RELAESE ///</div>
+        <div>{generateRoadmap(changeRoadmap)}</div>
+        <div className="roadmap-decoration-bottom">
+          <img src={Cloud} alt="decoration" />
+        </div>
       </div>
     </div>
   )

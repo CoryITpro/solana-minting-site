@@ -1,14 +1,13 @@
-import { SneakPeekImage } from "./style"
 import peekImage from "resources/sneakpeak.gif"
 import "./style.scss"
 
 const SneakPeek = () => {
   return (
-    <div className="sneakpeek">
-      <div className="sneakpeek-title">/// Our Story & Goal ///</div>
-      <div className="sneakpeek-wrapper">
+    <div className="sneakpeek flex flex-column">
+      <div className="sneakpeek-title container">/// OUR STORY & GOAL ///</div>
+      <div className="sneakpeek-wrapper container">
         <div className="sneakpeek-iterator flex">
-          <SneakPeekImage image={peekImage} />
+          <img src={peekImage} alt="sneakpeak" loading="lazy" />
         </div>
         <div className="sneakpeek-comment flex flex-column">
           <span>

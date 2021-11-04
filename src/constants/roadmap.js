@@ -1,7 +1,7 @@
 export const Roadmaps = [
   {
     step: "🚀The Release",
-    title: "EARLY ACCESS - 500 Mints",
+    title: "PRESALE - 500 Mints",
     content: [
       "500 Coollamas are open to mint for our Presale participants.",
       "These early Coollamas are also guaranteed to enter first bracket of giveaways raffle.",

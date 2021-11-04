@@ -2,6 +2,7 @@ import Navbar from "components/Navbar"
 import Hero from "components/Hero"
 import Gallery from "components/Gallery"
 import SneakPeek from "components/SneakPeek"
+import Horsemen from "components/Horsemen"
 import Roadmap from "components/Roadmap"
 import Game from "components/Game"
 import Team from "components/Team"
@@ -18,6 +19,7 @@ const Dashboard = ({ showSidebar, onHandleSidebar }) => (
     <Hero />
     <Gallery />
     <SneakPeek />
+    <Horsemen />
     <Roadmap />
     <Game />
     <Team />

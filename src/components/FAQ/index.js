@@ -35,9 +35,11 @@ const FAQ = () => {
   const [selectedItem, setSelectedItem] = useState(0)
 
   return (
-    <div className="faq">
-      <div className="faq-title">/// Frequently Asked Questions ///</div>
-      <div className="faq-wrapper">
+    <div className="faq flex flex-column">
+      <div className="faq-title container">
+        /// FREQUENTLY ASKED QUESTIONS ///
+      </div>
+      <div className="faq-wrapper container">
         {generateFaqItems(selectedItem, setSelectedItem)}
       </div>
     </div>
