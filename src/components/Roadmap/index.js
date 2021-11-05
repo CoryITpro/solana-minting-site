@@ -82,7 +82,7 @@ const Roadmap = () => {
         <div className="roadmap-decoration">
           <img src={CloudPlanet} alt="decoration" />
         </div>
-        <div className="roadmap-title">THE RELAESE</div>
+        <div className="roadmap-title">THE RELEASE</div>
         <div>{generateRoadmap(changeRoadmap)}</div>
         <div className="roadmap-decoration-bottom">
           <img src={Cloud} alt="decoration" />

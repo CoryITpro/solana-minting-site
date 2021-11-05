@@ -40,7 +40,10 @@
 
   &-iterator {
     justify-content: center;
+    align-items: flex-start;
     width: 100%;
+    height: intrinsic;
+    height: stretch;
 
     & > img {
       width: 100%;
@@ -51,7 +54,7 @@
 
   &-hot {
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
 
     &:before {
@@ -67,6 +70,7 @@
     }
 
     @media (max-width: 768px) {
+      font-size: 16px;
       text-align: center;
       padding: 0 24px 8px;
     }
