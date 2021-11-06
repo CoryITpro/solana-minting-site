@@ -2,10 +2,7 @@ export const Roadmaps = [
   {
     step: "🚀The Release",
     title: "PRESALE - 500 Mints",
-    content: [
-      "500 Coollamas are open to mint for our Presale participants.",
-      "These early Coollamas are also guaranteed to enter first bracket of giveaways raffle.",
-    ],
+    content: ["500 Coollamas are open to mint for our Presale participants."],
   },
   {
     title: "1000 Minted",
@@ -18,10 +15,7 @@ export const Roadmaps = [
   {
     step: "🪐100% Coollamas Onboard",
     title: "3,333 Minted",
-    content: [
-      "Giving away a total of another $12000 USDT to 6 lucky winners.",
-      "Another 50 SOL will go to the community wallet.",
-    ],
+    content: ["Another 50 SOL will go to the community wallet."],
   },
   {
     title: "Royalties",
